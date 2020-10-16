@@ -15,19 +15,23 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    private LoginControl ctlLogin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        ctlLogin.setOnLoginListener(new OnLoginListener()
+        {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onLogin(String usuario, String password)
+            {
+                //Validamos el usuario y la contraseña
+                if (usuario.equals("demo") && password.equals("demo"))
+                    ctlLogin.setMensaje("Login correcto!");
+                else
+                    ctlLogin.setMensaje("Vuelva a intentarlo.");
             }
         });
     }
