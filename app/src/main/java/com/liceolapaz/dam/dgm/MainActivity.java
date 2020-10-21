@@ -15,25 +15,42 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
-    private LoginControl ctlLogin;
+    private LoginControl login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ctlLogin.setOnLoginListener(new OnLoginListener()
+        login = (LoginControl) findViewById(R.id.CtlLogin);
+
+        login.setOnLoginListener(new OnLoginListener()
         {
             @Override
-            public void onLogin(String usuario, String password)
-            {
-                //Validamos el usuario y la contraseña
-                if (usuario.equals("demo") && password.equals("demo"))
-                    ctlLogin.setMensaje("Login correcto!");
-                else
-                    ctlLogin.setMensaje("Vuelva a intentarlo.");
+            public void onLogin(String usuario, String password) {
+
+                int contador = 0;
+
+                    //Validamos el usuario y la contraseña
+                    if (usuario.equals("admin") && password.equals("liceo")) {
+                        login.setMensaje("Login correcto!");
+
+                    } else {
+                        login.setMensaje("Vuelva a intentarlo.");
+                        contador++;
+                        if (contador == 3) {
+                            finish();
+                        }
+                    }
+
+
+
+
+
+
             }
         });
+
     }
 
     @Override
