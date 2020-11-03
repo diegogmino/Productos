@@ -12,4 +12,5 @@
     <string name="usuario">Usuario</string>
     <string name="contrasena">Contraseña</string>
     <string name="login">LOGIN</string>
+    <string name="jugadores_disponibles">Jugadores disponibles</string>
 </resources>

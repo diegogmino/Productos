@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="posiciones">
+        <item>Delantero (DL)</item>
+        <item>Portero (PT)</item>
+        <item>Defensa (DF)</item>
+        <item>Mediocampista (MC)</item>
+    </string-array>
+</resources>

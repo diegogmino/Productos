@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/fondoGris"
+    android:id="@+id/nuevo_jugador">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/barraNav">
+
+        <TextView
+            android:id="@+id/jugadorEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Onechan"
+            android:textColor="@color/texto"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:paddingLeft="15sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Código"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/texto"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/codigoJugador"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingRight="50dp"
+                android:backgroundTint="@color/texto"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/texto"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/nombreJugador"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingRight="50dp"
+                android:backgroundTint="@color/texto"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/texto"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/precioJugador"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingRight="50dp"
+                android:backgroundTint="@color/texto"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posición"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/texto"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/posicionJugador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:entries="@array/posiciones"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puntos"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/texto"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/puntosJugador"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingRight="50dp"
+                android:backgroundTint="@color/texto"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/aceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/border"
+            android:textColor="@color/texto"
+            android:layout_marginLeft="25sp"
+            android:text="Aceptar" />
+
+        <Button
+            android:id="@+id/cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/border"
+            android:textColor="@color/texto"
+            android:layout_marginLeft="20sp"
+            android:text="Cancelar" />
+
+        <Button
+            android:id="@+id/eliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/border"
+            android:textColor="@color/texto"
+            android:layout_marginLeft="20sp"
+            android:text="Eliminar" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>
