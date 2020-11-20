@@ -6,4 +6,6 @@
     <color name="barraNav">#FF55B3F4</color>
     <color name="texto">#FFFFFF</color>
     <color name="fondoGris">#959595</color>
+    <color name="negro">#000000</color>
+    <color name="borderDisable">#494949</color>
 </resources>

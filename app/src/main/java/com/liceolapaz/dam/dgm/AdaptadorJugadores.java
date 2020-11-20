@@ -60,7 +60,6 @@ public class AdaptadorJugadores
     @Override
     public void onBindViewHolder(JugadoresViewHolder viewHolder, int pos) {
         Jugadores item = datos.get(pos);
-
         viewHolder.bindJugador(item);
     }
 
@@ -75,7 +74,8 @@ public class AdaptadorJugadores
 
     @Override
     public void onClick(View view) {
-        if(listener != null)
+        if(listener != null) {
             listener.onClick(view);
+        }
     }
 }
